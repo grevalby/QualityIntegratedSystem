@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
+}); */
+
+Route::get('/', function () {
+    return view('dashboard.index');
 });
+
+/* Route::controller(DashboardController::class)->group(function(){
+    Route::get('/defectlist','defectlist');
+}); */
+
+Route::get('/project', [DashboardController::class, 'index']);
+
