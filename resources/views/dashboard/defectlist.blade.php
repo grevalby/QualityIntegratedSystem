@@ -15,8 +15,8 @@
         <thead>
         <tr>
           <th>No</th>
-          <th>Project</th>
-                 
+          <th>Defect</th>
+          <th>Defect Level</th>      
         </tr>
         </thead>
         <tbody>
@@ -25,7 +25,8 @@
         @php $no++; @endphp
         <tr>
             <td>{{ $no }}</td>
-            <td>{{ $item->project }}</td>
+            <td>{{ $item->defect }}</td>
+            <td>{{ $item->level_id }}</td>
         </tr>
         @endforeach
         </tfoot>

@@ -31,13 +31,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/machine" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
               <p>Machine</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/defectlist" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
               <p>Defect List</p>
             </a>
@@ -45,7 +45,7 @@
         </ul>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="/changepoint" class="nav-link">
           <i class="nav-icon fas fa-copy"></i>
           <p>
             Change Point

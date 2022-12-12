@@ -1,13 +1,13 @@
 @extends('dashboard.index')
 
 @section('judul')
-    Defect List
+    Change Point
 @endsection
 
 @section('isi')
 <div class="card">
     <div class="card-header">
-      <h3 class="card-title">Defect List</h3>
+      <h3 class="card-title">Changepoint</h3>
     </div>
     <!-- /.card-header -->
     <div class="card-body">
@@ -15,8 +15,12 @@
         <thead>
         <tr>
           <th>No</th>
-          <th>Project</th>
-                 
+          <th>Occur Date</th>
+          <th>Submit Date</th>    
+          <th>Workshop</th>
+          <th>Part Number</th>
+          <th>Lot</th>  
+          <th>Reporter</th>
         </tr>
         </thead>
         <tbody>
@@ -25,7 +29,8 @@
         @php $no++; @endphp
         <tr>
             <td>{{ $no }}</td>
-            <td>{{ $item->project }}</td>
+            <td>{{ $item->occur_date }}</td>
+            <td>{{ $item->data_entry }}</td>
         </tr>
         @endforeach
         </tfoot>

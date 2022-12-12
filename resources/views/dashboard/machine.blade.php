@@ -1,13 +1,13 @@
 @extends('dashboard.index')
 
 @section('judul')
-    Defect List
+    Machine Table
 @endsection
 
 @section('isi')
 <div class="card">
     <div class="card-header">
-      <h3 class="card-title">Defect List</h3>
+      <h3 class="card-title">Machine Table</h3>
     </div>
     <!-- /.card-header -->
     <div class="card-body">
@@ -15,8 +15,9 @@
         <thead>
         <tr>
           <th>No</th>
-          <th>Project</th>
-                 
+          <th>Machine No</th>
+          <th>Tonnage</th>  
+          <th>Maker</th>      
         </tr>
         </thead>
         <tbody>
@@ -25,7 +26,9 @@
         @php $no++; @endphp
         <tr>
             <td>{{ $no }}</td>
-            <td>{{ $item->project }}</td>
+            <td>{{ $item->machine }}</td>
+            <td>{{ $item->tonnage }}</td>
+            <td>{{ $item->maker }}</td>
         </tr>
         @endforeach
         </tfoot>

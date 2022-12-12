@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\ChangePointController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DefectListController;
+use App\Http\Controllers\MachineController;
+use App\Http\Controllers\Project;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,5 +31,8 @@ Route::get('/', function () {
     Route::get('/defectlist','defectlist');
 }); */
 
-Route::get('/project', [DashboardController::class, 'index']);
+Route::get('/project', [ProjectController::class, 'index']);
+Route::get('/defectlist', [DefectListController::class, 'index']);
+Route::get('/machine', [MachineController::class, 'index']);
+Route::get('/changepoint', [ChangePointController::class, 'index']);
 
