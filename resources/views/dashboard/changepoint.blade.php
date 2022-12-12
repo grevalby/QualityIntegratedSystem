@@ -11,7 +11,7 @@
     </div>
     <!-- /.card-header -->
     <div class="card-body">
-      <table id="project" class="table table-bordered table-striped">
+      <table id="project" class="table w-auto table-sm table-bordered table-striped">
         <thead>
         <tr>
           <th>No</th>

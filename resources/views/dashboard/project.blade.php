@@ -1,17 +1,17 @@
 @extends('dashboard.index')
 
 @section('judul')
-    Defect List
+    Project
 @endsection
 
 @section('isi')
 <div class="card">
     <div class="card-header">
-      <h3 class="card-title">Defect List</h3>
+      <h3 class="card-title">All Project</h3>
     </div>
     <!-- /.card-header -->
     <div class="card-body">
-      <table id="project" class="table table-bordered table-striped">
+      <table id="project" class="table w-auto table-sm table-bordered table-striped">
         <thead>
         <tr>
           <th>No</th>
