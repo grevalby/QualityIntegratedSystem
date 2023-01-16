@@ -16,6 +16,7 @@
         <tr>
           <th>No</th>
           <th>Project</th>
+          <th>Action</th>  
                  
         </tr>
         </thead>
@@ -26,6 +27,11 @@
         <tr>
             <td>{{ $no }}</td>
             <td>{{ $item->project }}</td>
+            <td>
+              <a href="" class="badge bg-info"><i class="nav-icon fas fa-eye"></i></a>
+              <a href="" class="badge bg-warning"><i class="nav-icon fas fa-edit"></i></a>
+              <a href="" class="badge bg-danger"><i class="nav-icon fas fa-trash-alt"></i></a>
+          </td>
         </tr>
         @endforeach
         </tfoot>
